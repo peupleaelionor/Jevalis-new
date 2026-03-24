@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="light" style=""><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guide Immobilier Européen JEVALIS 2025-2026</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&amp;family=Lato:wght@400;700&amp;display=swap" rel="stylesheet">
+    <style>
+      :root {
+        --brand-navy: #0b1c2d;
+        --brand-gold: #c9a24d;
+        --brand-gold-light: #e6c885;
+        --text-color: #333333;
+        --bg-color: #ffffff;
+        --spacing-unit: 1.5rem;
+      }
+
+      body {
+        font-family: 'Lato', Arial, sans-serif;
+        color: var(--text-color);
+        background-color: var(--bg-color);
+        max-width: 880px; /* A4 width simulation */
+        margin: 0 auto;
+        padding: 40px 60px;
+        line-height: 1.6;
+        font-size: 11pt;
+        box-sizing: border-box;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.05); /* Subtle shadow for document feel */
+      }
+
+      /* Typography */
+      h1,
+      h2,
+      h3,
+      h4 {
+        font-family: 'Playfair Display', Georgia, serif;
+        color: var(--brand-navy);
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        font-weight: 700;
+      }
+
+      h1 {
+        font-size: 28pt;
+        line-height: 1.2;
+        border-bottom: 3px solid var(--brand-gold);
+        padding-bottom: 15px;
+        margin-bottom: 30px;
+      }
+
+      h2 {
+        font-size: 18pt;
+        border-left: 5px solid var(--brand-gold);
+        padding-left: 15px;
+        margin-top: 40px;
+        background-color: #f8f9fa;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+
+      h3 {
+        font-size: 14pt;
+        color: var(--brand-gold);
+        margin-top: 25px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+      }
+
+      p {
+        margin-bottom: 1rem;
+        text-align: justify;
+      }
+
+      ul {
+        list-style-type: none;
+        padding-left: 0;
+      }
+
+      ul li {
+        padding-left: 20px;
+        position: relative;
+        margin-bottom: 8px;
+      }
+
+      ul li::before {
+        content: '•';
+        color: var(--brand-gold);
+        font-weight: bold;
+        font-size: 1.2em;
+        position: absolute;
+        left: 0;
+        top: -2px;
+      }
+
+      /* Branding Header */
+      .doc-header {
+        text-align: center;
+        margin-bottom: 60px;
+        padding-bottom: 40px;
+        border-bottom: 1px solid #eee;
+      }
+
+      .logo-text {
+        font-family: 'Playfair Display', serif;
+        font-size: 36pt;
+        font-weight: 900;
+        color: var(--brand-navy);
+        letter-spacing: 2px;
+        margin-bottom: 5px;
+      }
+
+      .logo-icon {
+        color: var(--brand-gold);
+      }
+
+      .baseline {
+        font-family: 'Lato', sans-serif;
+        font-size: 10pt;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        color: var(--brand-gold);
+        margin-bottom: 30px;
+      }
+
+      .doc-meta {
+        font-size: 10pt;
+        color: #666;
+        font-style: italic;
+      }
+
+      /* Tables */
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 25px 0;
+        font-size: 10pt;
+      }
+
+      th {
+        background-color: var(--brand-navy);
+        color: white;
+        padding: 12px;
+        text-align: left;
+        font-weight: normal;
+        font-family: 'Playfair Display', serif;
+      }
+
+      td {
+        border: 1px solid #ddd;
+        padding: 10px;
+      }
+
+      tr:nth-child(even) {
+        background-color: #f9f9f9;
+      }
+
+      /* Callout Boxes */
+      .callout {
+        background-color: #fcfbf8;
+        border: 1px solid var(--brand-gold-light);
+        padding: 20px;
+        margin: 25px 0;
+        border-radius: 2px;
+      }
+
+      .callout h4 {
+        color: var(--brand-gold);
+        margin-top: 0;
+        font-size: 12pt;
+      }
+
+      /* Footer */
+      .doc-footer {
+        margin-top: 80px;
+        padding-top: 20px;
+        border-top: 1px solid var(--brand-gold);
+        font-size: 9pt;
+        color: #888;
+        text-align: center;
+      }
+
+      /* TOC */
+      .toc {
+        background-color: #f8f9fa;
+        padding: 30px;
+        margin-bottom: 50px;
+        border: 1px solid #eee;
+      }
+      .toc h2 {
+        margin-top: 0;
+        border-left: none;
+        padding-left: 0;
+        background: none;
+        text-align: center;
+      }
+      .toc ul li {
+        border-bottom: 1px dotted #ccc;
+        padding: 8px 0;
+        display: flex;
+        justify-content: space-between;
+      }
+      .toc ul li::before {
+        content: none;
+      }
+      .toc-page {
+        font-weight: bold;
+        color: var(--brand-navy);
+      }
+
+      /* Utility */
+      .highlight {
+        color: var(--brand-gold);
+        font-weight: bold;
+      }
+      .text-center {
+        text-align: center;
+      }
+      .page-break {
+        margin-top: 60px;
+        padding-top: 20px;
+        border-top: 2px solid #eee;
+      }
+    </style>
+  </head>
+  <body style="">
+    <!-- COVER / HEADER -->
+    <header class="doc-header">
+      <div class="logo-text">JEVALIS<span class="logo-icon">.</span></div>
+      <div class="baseline">L'outil d'aide à la décision financière immobilière</div>
+
+      <h1 style="border: none; margin-top: 60px">GUIDE IMMOBILIEREUROPÉEN 2026-2027</h1>
+      <p style="text-align: center; font-size: 14pt; color: var(--brand-navy)">
+        Fiscalité, Frais et Stratégies d'Acquisition dans 10 Pays
+      </p>
+
+      <div class="doc-meta" style="margin-top: 40px">
+        Édition Février 2026<br>
+        Données validées et corrigées
+      </div>
+    </header>
+
+    <!-- INTRODUCTION -->
+    <section>
+      <h2>Introduction</h2>
+      <p>
+        L'investissement immobilier en Europe connaît en 2025 et 2026 des mutations fiscales majeures. Entre la réforme
+        des droits de mutation en France, l'abolition historique de la valeur locative en Suisse et les ajustements
+        fiscaux au Royaume-Uni post-élections, la navigation pour l'investisseur n'a jamais été aussi complexe.
+      </p>
+      <p>
+        Ce guide <strong>JEVALIS</strong> a été conçu pour offrir une clarté immédiate aux décideurs. Il compile les
+        données fiscales arrêtées au 1er février 2026 pour 10 marchés clés.
+      </p>
+
+      <div class="callout">
+        <h4>Avertissement Légal</h4>
+        <p style="font-size: 9pt; margin: 0">
+          Ce document est fourni à titre informatif uniquement et ne constitue pas un conseil juridique ou fiscal
+          personnalisé. Les lois évoluant rapidement, nous recommandons de valider chaque projet via l'outil de
+          simulation JEVALIS et auprès de notaires ou fiscalistes locaux.
+        </p>
+      </div>
+    </section>
+
+    <!-- TABLE DES MATIERES -->
+    <section class="toc">
+      <h2>Table des Matières</h2>
+      <ul>
+        <li><span>1. France : Réformes &amp; Opportunités</span> <span class="toc-page">P. 3</span></li>
+        <li><span>2. Suisse : Révolution Fiscale</span> <span class="toc-page">P. 4</span></li>
+        <li><span>3. Belgique : Complexité Régionale</span> <span class="toc-page">P. 5</span></li>
+        <li><span>4. Luxembourg : L'Investissement Premium</span> <span class="toc-page">P. 6</span></li>
+        <li><span>5. Pays-Bas : Le Marché Régulé</span> <span class="toc-page">P. 7</span></li>
+        <li><span>6. Allemagne : Stabilité &amp; Fédéralisme</span> <span class="toc-page">P. 8</span></li>
+        <li><span>7. Espagne : Le Marché du Sud (Nouveau)</span> <span class="toc-page">P. 9</span></li>
+        <li><span>8. Portugal : L'Après NHR (Nouveau)</span> <span class="toc-page">P. 10</span></li>
+        <li><span>9. Italie : La "Prima Casa" (Nouveau)</span> <span class="toc-page">P. 11</span></li>
+        <li><span>10. Royaume-Uni : Spécial 2026 (Nouveau)</span> <span class="toc-page">P. 12</span></li>
+        <li><span>11. Comparatifs &amp; Stratégies</span> <span class="toc-page">P. 13</span></li>
+      </ul>
+    </section>
+
+    <!-- PARTIE 1: FRANCE -->
+    <section class="page-break">
+      <h2>1. FRANCE</h2>
+      <h3>1.1 Fiscalité Immobilière Française 2026</h3>
+
+      <p>
+        <strong>Frais de Notaire (Droits de Mutation)</strong><br>
+        Suite à la loi de finances pour 2025, les départements ont été autorisés à relever le plafond des DMTO de 0,5
+        point.
+      </p>
+      <ul>
+        <li><strong>Bien Ancien :</strong> 7% à 8,5% du prix d'achat (selon département).</li>
+        <li><strong>Bien Neuf :</strong> 2,5% à 3,5% (inchangé, reste un levier d'optimisation majeur).</li>
+      </ul>
+
+      <p>
+        <strong>Plus-Value Immobilière</strong><br>
+        Le régime d'abattement pour durée de détention reste en vigueur :
+      </p>
+      <ul>
+        <li><strong>Taux global :</strong> 36,2% (19% Impôt sur le Revenu + 17,2% Prélèvements Sociaux).</li>
+        <li><strong>Exonération IR :</strong> Totale après 22 ans de détention.</li>
+        <li><strong>Exonération PS :</strong> Totale après 30 ans de détention.</li>
+      </ul>
+
+      <p><strong>Impôts Locaux</strong></p>
+      <ul>
+        <li>
+          <strong>Taxe Foncière :</strong> Variable selon les communes (0,7% à 1,2% valeur locative). Forte hausse
+          constatée dans les grandes métropoles.
+        </li>
+        <li>
+          <strong>IFI (Impôt sur la Fortune Immobilière) :</strong> Seuil de déclenchement à 1 300 000 € de patrimoine
+          net. Taux progressif de 0,5% à 1,5%.
+        </li>
+      </ul>
+
+      <h3>1.2 Stratégies d'Optimisation (10 Clés)</h3>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px">
+        <ul>
+          <li>1. Déduction de la valeur du mobilier</li>
+          <li>2. Frais d'agence "charge acquéreur"</li>
+          <li>3. Investissement dans le Neuf (VEFA)</li>
+          <li>4. Statut LMNP (Loueur Meublé Non Pro)</li>
+          <li>5. Dispositif Malraux (Rénovation)</li>
+        </ul>
+        <ul>
+          <li>6. Démembrement de propriété</li>
+          <li>7. Création de SCI à l'IS</li>
+          <li>8. Déficit Foncier (Travaux)</li>
+          <li>9. Exonération Résidence Principale</li>
+          <li>10. Donation temporaire d'usufruit</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PARTIE 2: SUISSE -->
+    <section class="page-break">
+      <h2>2. SUISSE</h2>
+      <h3>2.1 Système Cantonal &amp; Réforme Historique</h3>
+
+      <div class="callout">
+        <h4>🚨 Réforme 2025 : Abolition de la Valeur Locative</h4>
+        <p>
+          Votée le 28 septembre 2025, cette réforme historique supprime l'impôt sur le revenu fictif du propriétaire
+          occupant. <strong>Entrée en vigueur prévue : 2028.</strong> D'ici là, l'ancien système perdure.
+        </p>
+      </div>
+
+      <p><strong>Droits de Mutation (Variable par Canton)</strong></p>
+      <table>
+        <thead>
+          <tr>
+            <th>Canton</th>
+            <th>Taux Droits de Mutation</th>
+            <th>Particularité</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Zurich / Zoug / Schwytz</td>
+            <td>0%</td>
+            <td>Pas de droits de mutation cantonaux</td>
+          </tr>
+          <tr>
+            <td>Genève</td>
+            <td>3,3% (Caspar)</td>
+            <td>Réduction si usage habitation principale</td>
+          </tr>
+          <tr>
+            <td>Vaud</td>
+            <td>3,3%</td>
+            <td>Surtaxe communale possible</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>
+        <strong>Impôt sur la Fortune Immobilière</strong><br>
+        Varie de 0,3% à 1% de la valeur fiscale du bien selon le canton. Zoug reste le canton le plus attractif
+        fiscalement.
+      </p>
+    </section>
+
+    <!-- PARTIE 3: BELGIQUE -->
+    <section class="page-break">
+      <h2>3. BELGIQUE</h2>
+      <h3>3.1 Fiscalité par Région</h3>
+      <p>
+        La Belgique présente l'une des fiscalités à l'acquisition les plus lourdes d'Europe, avec de fortes disparités
+        régionales.
+      </p>
+
+      <ul>
+        <li>
+          <strong>Bruxelles-Capitale :</strong> 12,5% de droits d'enregistrement (record européen). Abattement possible
+          sur la première tranche pour résidence principale.
+        </li>
+        <li>
+          <strong>Wallonie :</strong> 12,5% (taux standard), réduit à 6% ou 5% pour habitation modeste sous conditions.
+        </li>
+        <li>
+          <strong>Flandre :</strong> 3% pour l'achat d'une habitation unique et propre (taux très attractif comparé aux
+          autres régions).
+        </li>
+      </ul>
+
+      <p>
+        <strong>Plus-value Spéculative</strong><br>
+        Taxation lourde de 16,5% si le bien est revendu moins de 5 ans après l'acquisition (hors résidence principale).
+      </p>
+    </section>
+
+    <!-- PARTIE 4: LUXEMBOURG -->
+    <section class="page-break">
+      <h2>4. LUXEMBOURG</h2>
+      <h3>4.1 Fiscalité Attractive</h3>
+      <p>Le Grand-Duché reste une valeur refuge pour l'immobilier patrimonial, malgré des prix au m² élevés.</p>
+
+      <ul>
+        <li><strong>Frais d'acquisition (Ancien) :</strong> 6% Enregistrement + 1% Transcription = 7% total.</li>
+        <li>
+          <strong>Crédit d'impôt "Bëllegen Akt" :</strong> Abattement fiscal par personne sur les droits
+          d'enregistrement pour résidence principale (montant ajusté en 2024/2025).
+        </li>
+        <li>
+          <strong>Frais d'acquisition (Neuf - VEFA) :</strong> TVA super-réduite à 3% sur la construction (sous
+          plafond), terrain taxé normalement.
+        </li>
+      </ul>
+    </section>
+
+    <!-- PARTIE 5: PAYS-BAS -->
+    <section class="page-break">
+      <h2>5. PAYS-BAS</h2>
+      <h3>5.1 Système Fiscal Néerlandais</h3>
+
+      <p><strong>Overdrachtsbelasting (Taxe de Transfert)</strong></p>
+      <ul>
+        <li>
+          <strong>Investisseurs / Résidence Secondaire :</strong> 10,4%. Un taux dissuasif mis en place pour calmer le
+          marché locatif.
+        </li>
+        <li><strong>Résidence Principale (Standard) :</strong> 2%.</li>
+        <li>
+          <strong>Jeunes Acquéreurs (&lt;35 ans) :</strong> 0% (Exonération totale) pour un premier achat sous un certain
+          plafond de prix (ajusté annuellement, env. 510 000 € en 2026).
+        </li>
+      </ul>
+
+      <p>
+        <strong>Fiscalité Récurrente</strong><br>
+        <em>Eigenwoningforfait :</em> Un pourcentage de la valeur WOZ (valeur cadastrale) est ajouté au revenu imposable
+        pour les propriétaires occupants.
+      </p>
+    </section>
+
+    <!-- PARTIE 6: ALLEMAGNE -->
+    <section class="page-break">
+      <h2>6. ALLEMAGNE</h2>
+      <h3>6.1 Grunderwerbsteuer (Taxe de Transfert)</h3>
+      <p>
+        En Allemagne, chaque Land fixe son propre taux. Il s'ajoute aux frais de notaire (env. 1,5 - 2%) et d'agence.
+      </p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Land (Région)</th>
+            <th>Taux Transfert</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Bavière, Saxe</td>
+            <td>3,5% (Les plus bas)</td>
+          </tr>
+          <tr>
+            <td>Hambourg, Bade-Wurtemberg</td>
+            <td>5,0% - 5,5%</td>
+          </tr>
+          <tr>
+            <td>Berlin, Hesse, Rhénanie-du-Nord</td>
+            <td>6,0%</td>
+          </tr>
+          <tr>
+            <td>Brandebourg, Sarre, Thuringe</td>
+            <td>6,5% (Les plus hauts)</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="callout">
+        <h4>Avantage Fiscal Majeur 🇩🇪</h4>
+        <p>
+          <strong>Exonération Totale des Plus-Values</strong> après 10 ans de détention pour les personnes physiques.
+          Une exception notable en Europe.
+        </p>
+      </div>
+    </section>
+
+    <!-- PARTIE 7: ESPAGNE -->
+    <section class="page-break">
+      <h2>7. ESPAGNE (Nouveau)</h2>
+      <h3>7.1 Fiscalité 2026</h3>
+
+      <p>
+        <strong>Achat dans l'Ancien</strong><br>
+        Soumis à l'<strong>ITP</strong> (Impuesto sobre Transmisiones Patrimoniales). Taux variable selon la Communauté
+        Autonome :
+      </p>
+      <ul>
+        <li>Madrid : 6%</li>
+        <li>Andalousie (Costa del Sol) : 7%</li>
+        <li>Catalogne (Barcelone) / Baléares : 10% à 11%</li>
+      </ul>
+
+      <p>
+        <strong>Achat dans le Neuf</strong><br>
+        Soumis à la <strong>TVA (IVA)</strong> de 10% + <strong>AJD</strong> (Actes Juridiques Documentés) de 1% à 1,5%.
+      </p>
+
+      <p><strong>Frais de Notaire :</strong> Très compétitifs, environ 0,2% à 0,5% du prix (entre 300€ et 2000€).</p>
+    </section>
+
+    <!-- PARTIE 8: PORTUGAL -->
+    <section class="page-break">
+      <h2>8. PORTUGAL (Nouveau)</h2>
+      <h3>8.1 Fin du NHR et Nouveau Cadre "IFICI"</h3>
+
+      <p>
+        Le célèbre régime RNH (Résident Non Habituel) a pris fin en janvier 2024. Il est remplacé en 2025-2026 par le
+        régime <strong>IFICI (Tax Incentive for Scientific Research and Innovation)</strong>, souvent appelé "NHR 2.0".
+      </p>
+
+      <ul>
+        <li><strong>Cible plus restreinte :</strong> Chercheurs, profils hautement qualifiés, startups.</li>
+        <li><strong>Avantage :</strong> Taux "flat" de 20% sur les revenus du travail au Portugal pendant 10 ans.</li>
+        <li>
+          <strong>Revenus Étrangers :</strong> Exonération possible sur les dividendes et intérêts (sous conditions
+          strictes de convention fiscale).
+        </li>
+      </ul>
+
+      <p>
+        <strong>Frais d'Acquisition (IMT)</strong><br>
+        Barème progressif jusqu'à 6% pour le résidentiel. + 0,8% de droit de timbre (Imposto do Selo).
+      </p>
+    </section>
+
+    <!-- PARTIE 9: ITALIE -->
+    <section class="page-break">
+      <h2>9. ITALIE (Nouveau)</h2>
+      <h3>9.1 Le Paradis de la "Prima Casa"</h3>
+
+      <p>
+        L'Italie offre un différentiel fiscal massif entre l'achat d'une résidence principale ("Prima Casa") et
+        secondaire.
+      </p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Type d'Achat</th>
+            <th>Taxe d'Enregistrement</th>
+            <th>TVA (Si Neuf)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Prima Casa</strong></td>
+            <td><strong>2%</strong> (sur valeur cadastrale*)</td>
+            <td>4%</td>
+          </tr>
+          <tr>
+            <td><strong>Résidence Secondaire</strong></td>
+            <td>9% (sur valeur cadastrale*)</td>
+            <td>10% à 22%</td>
+          </tr>
+        </tbody>
+      </table>
+      <p style="font-size: 9pt; font-style: italic">
+        *La valeur cadastrale est souvent très inférieure à la valeur marchande, réduisant encore l'impôt réel.
+      </p>
+
+      <p>
+        <strong>IMU (Taxe Foncière) :</strong> Exonération totale pour la résidence principale (hors biens de luxe
+        classés A1/A8/A9).
+      </p>
+    </section>
+
+    <!-- PARTIE 10: ROYAUME-UNI -->
+    <section class="page-break">
+      <h2>10. ROYAUME-UNI (Nouveau)</h2>
+      <h3>10.1 Stamp Duty Land Tax (SDLT) - Réforme Avril 2025</h3>
+
+      <p>Depuis le 1er avril 2025, les seuils temporaires ont pris fin, durcissant la fiscalité d'acquisition.</p>
+
+      <p><strong>Nouveaux Paliers SDLT 2026 (Résidence Principale) :</strong></p>
+      <ul>
+        <li>0 £ - 125 000 £ : <strong>0%</strong> (Seuil abaissé de 250k à 125k)</li>
+        <li>125 001 £ - 250 000 £ : <strong>2%</strong></li>
+        <li>250 001 £ - 925 000 £ : <strong>5%</strong></li>
+        <li>925 001 £ - 1 500 000 £ : <strong>10%</strong></li>
+        <li>&gt; 1,5 Million £ : <strong>12%</strong></li>
+      </ul>
+
+      <p><strong>Surcharges :</strong></p>
+      <ul>
+        <li><strong>Résidence Secondaire / Buy-to-Let :</strong> +3% sur tous les paliers.</li>
+        <li><strong>Non-Résidents UK :</strong> +2% supplémentaire (soit +5% total pour un investisseur étranger).</li>
+      </ul>
+    </section>
+
+    <!-- PARTIE 11: COMPARATIFS -->
+    <section class="page-break">
+      <h2>11. TABLEAUX COMPARATIFS</h2>
+
+      <h3>11.1 Coût total d'acquisition (Bien de 300 000 €)</h3>
+      <p>Estimation incluant taxes + notaire moyen.</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Pays</th>
+            <th>% Frais Estimatifs</th>
+            <th>Coût Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>🇬🇧 UK (First Time)</td>
+            <td>~1-2%</td>
+            <td>305 000 € (Le moins cher)</td>
+          </tr>
+          <tr>
+            <td>🇨🇭 Suisse (Zoug)</td>
+            <td>~0,5%</td>
+            <td>301 500 €</td>
+          </tr>
+          <tr>
+            <td>🇮🇹 Italie (Prima Casa)</td>
+            <td>~3-4%</td>
+            <td>310 000 €</td>
+          </tr>
+          <tr>
+            <td>🇩🇪 Allemagne (Bavière)</td>
+            <td>~5,5%</td>
+            <td>316 500 €</td>
+          </tr>
+          <tr>
+            <td>🇫🇷 France (Ancien)</td>
+            <td>~7,5%</td>
+            <td>322 500 €</td>
+          </tr>
+          <tr>
+            <td>🇪🇸 Espagne (Catalogne)</td>
+            <td>~11%</td>
+            <td>333 000 €</td>
+          </tr>
+          <tr>
+            <td>🇧🇪 Belgique (Bruxelles)</td>
+            <td>~14%</td>
+            <td>342 000 € (Le plus cher)</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>11.2 Le Verdict JEVALIS</h3>
+      <ul>
+        <li>
+          <strong>Pour le rendement pur :</strong> Le Royaume-Uni (hors Londres centre) et l'Allemagne (Est) offrent les
+          meilleurs ratios malgré la fiscalité.
+        </li>
+        <li><strong>Pour le patrimoine :</strong> Le Luxembourg et la Suisse restent les coffres-forts de l'Europe.</li>
+        <li>
+          <strong>L'opportunité 2026 :</strong> L'Italie (Prima Casa) pour la résidence semi-principale grâce à
+          l'exonération de taxe foncière et les frais réduits.
+        </li>
+      </ul>
+    </section>
+
+    <!-- CHECKLIST -->
+    <section class="page-break">
+      <h2>13. CHECKLIST D'ACHAT EUROPÉENNE</h2>
+      <div class="callout">
+        <ul>
+          <li>
+            <strong>Phase 1 : Validation Financière.</strong> Calcul de la capacité d'emprunt transfrontalière. Utiliser
+            JEVALIS pour simuler le "reste à vivre" réel.
+          </li>
+          <li>
+            <strong>Phase 2 : Maîtrise Fiscale.</strong> Vérifier les conventions fiscales bilatérales pour éviter la
+            double imposition.
+          </li>
+          <li>
+            <strong>Phase 3 : Offre d'Achat.</strong> Toujours insérer des clauses suspensives (obtention de prêt,
+            urbanisme).
+          </li>
+          <li>
+            <strong>Phase 4 : Audit Technique.</strong> Diagnostics obligatoires (DPE en France, EPC en Belgique, etc.).
+          </li>
+          <li>
+            <strong>Phase 5 : Closing.</strong> Signature acte authentique et paiement des taxes (le jour J dans la
+            plupart des pays).
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="doc-footer">
+      <p><strong>GUIDE IMMOBILIER EUROPÉEN 2025-2026</strong></p>
+      <p>
+        Édité par JEVALIS -&nbsp;</p>
+      <p>© 2026 JEVALIS. Tous droits réservés. Reproduction interdite sans autorisation.</p>
+      <p>
+        <em>Les données financières sont fournies à titre indicatif et sont susceptibles d'évoluer. Consultez toujours un
+          notaire ou un avocat fiscaliste avant de vous engager.</em>
+      </p>
+    </footer>
+  
+
+</body></html>
