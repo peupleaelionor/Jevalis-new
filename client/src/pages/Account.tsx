@@ -91,6 +91,21 @@ export default function Account() {
                     <FileText className="w-4 h-4"/> Guide fiscal
                   </Button>
                 </Link>
+                <Link href="/guide">
+                  <Button variant="outline" className="w-full border-[oklch(0.25_0.03_250)] text-white gap-2 justify-start" size="sm" style={{ fontFamily: "var(--font-heading)" }}>
+                    <FileText className="w-4 h-4"/> Guide Immobilier Européen
+                  </Button>
+                </Link>
+                <Link href="/comparateur">
+                  <Button variant="outline" className="w-full border-[oklch(0.25_0.03_250)] text-white gap-2 justify-start" size="sm" style={{ fontFamily: "var(--font-heading)" }}>
+                    <ArrowRight className="w-4 h-4"/> Comparateur de pays
+                  </Button>
+                </Link>
+                <Link href="/simulateur-rendement">
+                  <Button variant="outline" className="w-full border-[oklch(0.25_0.03_250)] text-white gap-2 justify-start" size="sm" style={{ fontFamily: "var(--font-heading)" }}>
+                    <ArrowRight className="w-4 h-4"/> Simulateur rendement
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>
