@@ -1,0 +1,129 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
+}
+
+model User {
+  id            String    @id @default(cuid())
+  name          String?
+  email         String    @unique
+  emailVerified DateTime?
+  image         String?
+  role          Role      @default(USER)
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+
+  accounts    Account[]
+  sessions    Session[]
+  simulations Simulation[]
+  payments    Payment[]
+}
+
+enum Role {
+  USER
+  ADMIN
+}
+
+model Account {
+  id                String  @id @default(cuid())
+  userId            String
+  type              String
+  provider          String
+  providerAccountId String
+  refresh_token     String? @db.Text
+  access_token      String? @db.Text
+  expires_at        Int?
+  token_type        String?
+  scope             String?
+  id_token          String? @db.Text
+  session_state     String?
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([provider, providerAccountId])
+}
+
+model Session {
+  id           String   @id @default(cuid())
+  sessionToken String   @unique
+  userId       String
+  expires      DateTime
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+}
+
+model VerificationToken {
+  identifier String
+  token      String   @unique
+  expires    DateTime
+
+  @@unique([identifier, token])
+}
+
+model Simulation {
+  id        String   @id @default(cuid())
+  userId    String?
+  country   String   @db.VarChar(2)
+  inputData Json
+  result    Json
+  isPaid    Boolean  @default(false)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  user     User?     @relation(fields: [userId], references: [id], onDelete: SetNull)
+  payments Payment[]
+  reports  Report[]
+
+  @@index([userId])
+  @@index([country])
+}
+
+model Payment {
+  id                    String        @id @default(cuid())
+  userId                String?
+  simulationId          String
+  stripeSessionId       String        @unique
+  stripePaymentIntentId String?
+  amount                Int
+  currency              String        @default("eur") @db.VarChar(3)
+  status                PaymentStatus @default(PENDING)
+  productType           ProductType   @default(REPORT)
+  idempotencyKey        String        @unique
+  createdAt             DateTime      @default(now())
+  updatedAt             DateTime      @updatedAt
+
+  user       User?      @relation(fields: [userId], references: [id], onDelete: SetNull)
+  simulation Simulation @relation(fields: [simulationId], references: [id])
+
+  @@index([userId])
+  @@index([stripeSessionId])
+}
+
+enum PaymentStatus {
+  PENDING
+  COMPLETED
+  FAILED
+  REFUNDED
+}
+
+enum ProductType {
+  REPORT
+  GUIDE
+  BUNDLE
+}
+
+model Report {
+  id           String   @id @default(cuid())
+  simulationId String
+  blobUrl      String?  @db.Text
+  filename     String?
+  generatedAt  DateTime @default(now())
+
+  simulation Simulation @relation(fields: [simulationId], references: [id])
+
+  @@index([simulationId])
+}
