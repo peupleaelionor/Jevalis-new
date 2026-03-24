@@ -14,11 +14,17 @@ import Account from "./pages/Account";
 import AdminLogin from "./pages/AdminLogin";
 import EbookPreview from "./pages/EbookPreview";
 import LegalPage from "./pages/LegalPage";
+import Guide from "./pages/Guide";
+import CountryPage from "./pages/CountryPage";
+import ComparatorPage from "./pages/ComparatorPage";
+import RentalYieldPage from "./pages/RentalYieldPage";
+import BankDossierPage from "./pages/BankDossierPage";
 
 function Router() {
   return (
     <Switch>
       <Route path="/" component={Home} />
+      <Route path="/guide" component={Guide} />
       <Route path="/blog" component={Blog} />
       <Route path="/admin/login" component={AdminLogin} />
       <Route path="/admin" component={Admin} />
@@ -27,9 +33,17 @@ function Router() {
       <Route path="/login" component={Login} />
       <Route path="/account" component={Account} />
       <Route path="/apercu-ebook" component={EbookPreview} />
+      <Route path="/simulateur-rendement" component={RentalYieldPage} />
+      <Route path="/dossier-bancaire" component={BankDossierPage} />
+      <Route path="/comparateur/:pair" component={ComparatorPage} />
+      <Route path="/comparateur" component={ComparatorPage} />
       <Route path="/mentions-legales" component={() => <LegalPage page="mentions" />} />
       <Route path="/confidentialite" component={() => <LegalPage page="confidentialite" />} />
       <Route path="/cgv" component={() => <LegalPage page="cgv" />} />
+      <Route path="/:country/frais-notaire" component={CountryPage} />
+      <Route path="/:country/droits-mutation" component={CountryPage} />
+      <Route path="/:country/fiscalite-achat" component={CountryPage} />
+      <Route path="/:country" component={CountryPage} />
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />
     </Switch>
